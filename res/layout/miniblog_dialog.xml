@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@color/blue"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/create_sub_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingLeft="16dp"
+        android:text="Create Mini Blog"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@+id/create_sub_dialog"
+        android:background="@color/white"
+        android:layout_margin="6dp"
+        android:padding="3dp">
+
+        <EditText
+            android:id="@+id/et_mini_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="313"
+            android:fontFamily="@font/vazir"
+            android:hint="Write your idea ..."
+            android:padding="8dp"
+            android:textColor="@color/blue"
+            android:textColorHighlight="#00FFFFFF"
+            android:textColorHint="@color/gr"
+            android:textSize="14sp"
+            app:counterMaxLength="313" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/lin"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layoutDirection="ltr">
+
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="1dp"
+            android:background="#BFEF0000"
+            android:fontFamily="@font/roboto_black"
+            android:text="CANCEL"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <Button
+            android:id="@+id/btn_dialog_success"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:background="@color/Success"
+            android:fontFamily="@font/roboto_black"
+            android:text="POST"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_dialog_cancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

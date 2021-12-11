@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/icon_app" android:title="" android:icon="@drawable/ic_yellow" android:iconTint="@color/gold" />
+    <item android:id="@+id/Archive" android:title="" android:icon="@drawable/blog" android:iconTint="@color/white"/>
+    <item android:id="@+id/fav" android:title="" android:icon="@drawable/is_like" android:iconTint="@color/white"/>
+    <item android:id="@+id/star" android:title="" android:icon="@drawable/star" android:iconTint="@color/white"/>
+    <item android:id="@+id/setting" android:title="" android:icon="@drawable/setting" android:iconTint="@color/white"/>
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mahdirahmani8.weblogapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_yellow"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_yellow"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Design.NoActionBar"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name="com.mahdirahmani8.BlogCategory"
+            android:exported="true" />
+        <activity android:name=".Read" />
+        <activity android:name=".ForgotPass2" />
+        <activity android:name=".Splash" />
+        <activity android:name=".FollowHashtag" />
+        <activity android:name=".GetName" />
+        <activity
+            android:name=".write_blog"
+            android:screenOrientation="portrait" />
+        <activity android:name=".VeryfyEmail" />
+        <activity android:name=".Forgot_pass" />
+        <activity android:name=".SignIn" />
+        <activity
+            android:name=".MianActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SignUp" />
+        <activity
+            android:name=".FirstSplash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>

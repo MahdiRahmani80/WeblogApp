@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">We Blog</string>
+    <string name="app_repo">repo</string>
+    <string name="follow_category">Follow Category</string>
+    <string name="let_s_go">Let\'s Go</string>
+    <string name="set_category">Set Category</string>
+</resources>

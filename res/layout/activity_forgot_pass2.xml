@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/sky" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_bg" />
+
+
+    <TextView
+        android:id="@+id/login_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/opensans_extrabold"
+        android:text="Write your password"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.marlonmafra.android.widget.EditTextPassword
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_btn"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Password"
+            android:gravity="center"
+            android:password="true"
+            android:padding="17dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/Gray" />
+
+        <TextView
+            android:id="@+id/verify"
+            android:layout_width="220dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/et_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/sigin_in_bg"
+            android:fontFamily="@font/opensans_extrabold"
+            android:gravity="center"
+            android:text="Confirm"
+            android:textColor="@color/gold"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

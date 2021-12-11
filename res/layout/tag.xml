@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/REL_tag"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/blue"
+    android:visibility="visible"
+    android:textDirection="ltr"
+    android:layoutDirection="rtl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr">
+
+        <com.pchmn.materialchips.ChipsInput
+            android:id="@+id/chips_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chip_backgroundColor="@color/gold"
+            app:chip_deletable="false"
+            app:chip_deleteIconColor="@color/colorPrimary"
+            app:chip_detailed_backgroundColor="@color/black"
+            app:chip_detailed_deleteIconColor="@color/black"
+            app:chip_detailed_textColor="@color/white"
+            app:chip_hasAvatarIcon="true"
+            app:chip_labelColor="@color/bottom_blue"
+            app:filterable_list_backgroundColor="@color/black"
+            app:filterable_list_textColor="@color/black"
+            app:hint="Enter a name"
+            app:hintColor="@color/Gray"
+            app:maxRows="10"
+            app:textColor="@color/white" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_submit"
+        android:fontFamily="@font/opensans_extrabold"
+        android:gravity="center"
+        android:text="POST"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+</RelativeLayout>

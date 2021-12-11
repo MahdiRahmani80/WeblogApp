@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_comment_item"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/tv_reply_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/roboto_medium"
+        android:layoutDirection="ltr"
+        android:text="REPLY BLOG : *******"
+        android:textColor="@color/white"
+        android:textDirection="ltr"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/REL_MY_blog_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_reply_profile"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/bg_blog_item"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/subject_blog_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Subject it is "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_blog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject_blog_profile"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/vazir"
+            android:text="this is 180 first char , is lorem epilasion test text !"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_blog"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/roboto_light"
+            android:padding="10dp"
+            android:text="145 Liked"
+            android:textColor="@color/gr"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_blog"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/roboto_light"
+            android:padding="10dp"
+            android:text="2020.04.21"
+            android:textColor="@color/gr"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_READ"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/REL_MY_blog_profile"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/next" />
+
+    <TextView
+        android:id="@+id/tv_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/REL_MY_blog_profile"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="-8dp"
+        android:layout_toLeftOf="@+id/img_READ"
+        android:fontFamily="@font/roboto_black"
+        android:padding="0dp"
+        android:text="Read"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/like_blog_profile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/REL_MY_blog_profile"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/like"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/edit_blog_profile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/REL_MY_blog_profile"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/like_blog_profile"
+        android:src="@drawable/write"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_trash"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/REL_MY_blog_profile"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/edit_blog_profile"
+        android:src="@drawable/trash"
+        android:visibility="visible" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/love_blog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/love"
+        android:visibility="gone" />
+</RelativeLayout>

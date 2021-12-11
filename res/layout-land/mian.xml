@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MianActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_marginStart="88dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nv_rig_min"
+        app:layout_constraintStart_toEndOf="@+id/nv_min"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:ignore="MissingConstraints">
+
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_min"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/gr"
+        app:itemIconSize="20dp"
+        app:itemIconTint="@color/white"
+        app:itemRippleColor="@color/blue"
+        app:itemTextColor="@color/bottom_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/nv_main_landspace"
+        tools:ignore="MissingConstraints"
+        android:foregroundGravity="center"/>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_rig_min"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/gr"
+        app:itemIconSize="20dp"
+        app:itemRippleColor="@color/blue"
+        app:itemTextColor="@color/bottom_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503"
+        app:menu="@menu/right_home_menu"
+        tools:ignore="MissingConstraints"
+        android:foregroundGravity="center"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

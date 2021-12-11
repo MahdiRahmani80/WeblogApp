@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/txt_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/opensans_extrabold"
+        android:text="Create Blog"
+        android:textColor="@color/gold"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/back"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_disc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_create"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/opensans_light"
+        android:text="Write your blog ..."
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/REL_create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-2dp"
+        android:gravity="top">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_et"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_blog_item"
+            android:backgroundTint="@color/white"
+            android:hint="Subject"
+            android:isScrollContainer="true"
+            android:layoutDirection="ltr"
+            android:padding="5dp"
+            android:pointerIcon="arrow"
+            android:textColorHint="@color/Gray"
+            app:counterEnabled="true"
+            app:counterMaxLength="313"
+            app:endIconTint="@color/Gray"
+            app:errorTextColor="#FF0015"
+            app:hintTextColor="@color/Gray"
+            app:startIconContentDescription="Subject"
+            tools:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_subject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Gray"
+                android:textColorLink="@color/DarkBlue"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_et">
+
+            <ImageView
+                android:id="@+id/next_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/next" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/next_img"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/save_in_db"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_et"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/img_archive"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/blog" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:id="@+id/rec_create"
+        android:visibility="gone"
+        android:layout_below="@+id/back"/>
+
+</RelativeLayout>

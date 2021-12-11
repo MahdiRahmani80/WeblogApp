@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/REL_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layoutDirection="rtl"
+    android:textDirection="ltr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_comment_item"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Reply : MahdiRahmani"
+            android:textColor="@color/gold"
+            android:textSize="12dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reply"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/bg_comment_txt"
+            android:fontFamily="@font/vazir"
+            android:paddingLeft="10dp"
+            android:paddingTop="11dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="11dp"
+            android:text="Comment"
+            android:textColor="@color/black"
+            android:textDirection="ltr"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Mahdi Rahmani"
+            android:textColor="@color/gold"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/write_comment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/comment"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/like_comment"
+            android:src="@drawable/write"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/like_comment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/comment"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/like_count"
+            android:src="@drawable/like"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/opensans_extrabold"
+            android:text="25"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/et_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_blog_item"
+            android:hint="Write comment ..."
+            android:padding="6dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/Gray"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/reply_comment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/comment"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/paper_plane"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>
