@@ -12,7 +12,8 @@
 <br></br>
 ## <a href="https://github.com/MahdiRahmani80/WeblogApp/raw/main/release/app-release.apk"> DOWNLOAD WEBLOGAPP </a>
 
-<video width="320" height="240" controls>
+<!-- <video>
   <source src="https://github.com/MahdiRahmani80/WeblogApp/raw/main/screen_shot/Screenrecorder-2021-12-11-20-23-40-835.mp4" type="video/mp4"
 Your browser does not support the video tag.
-</video>
+</video> -->
+[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://github.com/MahdiRahmani80/WeblogApp/raw/main/screen_shot/Screenrecorder-2021-12-11-20-23-40-835.mp4)
