@@ -4,11 +4,9 @@
    you can create blog's and watch blog's 
 
 ## Features :
-   strime vieo,music &youtobe & good editor for write
-
-## How to use !
-   you can copy file in your YOUR_APP/src/main/
-
+strim video, music &youtobe & good editor for write
+## How to use it!
+you can copy the file in your YOUR_APP/src/main/
 <br></br>
 ## <a href="https://github.com/MahdiRahmani80/WeblogApp/raw/main/release/app-release.apk"> DOWNLOAD WEBLOGAPP </a>
 
